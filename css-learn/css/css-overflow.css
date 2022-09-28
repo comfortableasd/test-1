@@ -1,0 +1,14 @@
+div{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    /* overflow: visible; 文本全部显示*/
+    /* overflow: hidden; 文本隐藏 */
+    /* overflow: scroll;滚动条 */
+    /* overflow: auto;自动最佳 */
+    /* overflow: inherit;继承父元素 */
+}
+.box{
+    overflow-x: auto;
+    overflow-y: hidden;
+}
