@@ -1,12 +1,33 @@
 *{
-    margin: 0%;
+    margin: 0;
     padding: 0%;
 }
 div{
     float: left;
-    width: 200px;
+    width: 187px;
     height: 150px;
+    font-size: 12px;
+}
+div img{
+    width: 187px;
+    height: 125px;
+    align-content: center;
 }
 .box1{
-    background-color: antiquewhite;
+    background-color: #f6f7f8;
+    text-align: center;
+}
+a{
+    height: 20px;
+    text-align: center;
+    font-size: 10px;
+}
+a:link{
+    background-color: white;
+}
+a:active{
+    background-color: blue;
+}
+p:hover{
+    background-color: #3064bb;
 }
