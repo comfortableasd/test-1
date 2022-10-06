@@ -1,0 +1,40 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+.box{
+    width: 300px;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.box>li{
+    background-color: blue;
+    color: white;
+    width: 148px;
+    float: left;
+    line-height: 40px;
+    text-align:center;
+    border:1px  blue solid;
+}
+
+.box>li:hover{
+    background-color: lightblue;
+}
+
+.box>li>ul{
+    display: none;
+    color: black;
+}
+
+.box>li:hover ul{
+    display: block;
+}
+
+.box>li> li:hover{
+    color: blue;
+}
