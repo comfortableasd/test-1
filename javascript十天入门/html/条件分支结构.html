@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>分支结构</title>
+</head>
+<body>
+    <form action="#" >
+        <input type="number" name="demo" id = "demo">
+        <button>开始</button>
+    </form>
+    <script>
+        var sum = 90
+        var youhuisum 
+        if(sum > 200){
+            youhuisum = sum - 10
+            console.log("减十元优惠")
+        }
+        else if(sum>100){
+            youhuisum = sum - 5
+            console.log("减五元优惠")
+        }
+        else if(sum >50){
+            youhuisum = sum - 3
+            console.log("减三元优惠")
+        }
+        else{
+            yopuhuisum = sum
+            console.log("没有优惠")
+        }
+        console.log(youhuisum,sum)
+
+        
+        document.querySelector('button').onclick =function panduan(){
+            var a = Number(document.getElementById("demo").innerText)
+            if(a % 2 == 0)
+                alert(a + "是偶数")
+                else
+                document.write(a + "是奇数")
+        }
+
+        var input = 81
+        if(input >= 90){
+            document.write("A")
+        }
+        else if(input >= 80){
+            document.write("B")
+        }
+        else if(input >= 70){
+            document.write("C")
+        }
+        else if(input >= 60){
+            document.write("D")
+        }
+        else {
+            document.write("E")
+        }
+
+        var age = 2000
+        function panduanrun(age){
+        if(age %400 == 0 || (age%4 == 0 && age %100 != 0)){
+            document.write(age +"是闰年")
+            return true
+        }
+        else{
+            document.write(age + "不是闰年")
+            return false
+        }
+        }
+        
+        document.write("<br>")
+
+       var code = 1 
+        switch (code){
+            case 1:
+                document.write("未付款")
+                break;
+            case 2:
+                document.write("已付款")
+                break;
+            case 3:
+                document.write("已发货")
+                break;
+            case 4:
+                document.write("已完成")
+                break;
+            default:
+                document.write("出错了")
+        }
+
+        var year =2011
+        var month = 9
+        var day = 8
+        var sum = 0
+        switch(month){
+            case 12:
+            sum += 30
+            case 11:
+            sum += 30
+            case 10:
+            sum += 30
+            case 9:
+            sum += 30
+            case 8:
+            sum += 30
+            case 7:
+            sum += 30
+            case 6:
+            sum += 30
+            case 5:
+            sum += 30
+            case 4:
+            sum += 30
+            case 3:
+            sum+=30
+            case 2:
+                if(panduanrun(year))
+                sum += 29
+                else
+                sum +=28
+            sum += day
+            break;
+        }
+        document.write(sum)
+    </script>
+</body>
+</html>

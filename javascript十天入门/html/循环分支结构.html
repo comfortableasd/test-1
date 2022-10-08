@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding:0%;
+        }
+        fieldset{
+            margin: 50px 0;
+        }
+        .gezi{
+            display: inline-block;
+            width:100px;
+            height: 50px;
+            line-height: 50px;
+            overflow: hidden;
+            text-align: center;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>while循环结构</legend>
+        100以内自然数求和
+        <script>
+            var n=0
+           /*  while( n<10 ){
+                document.write("hello,world")
+                console.log("hello world")
+                n++
+            } */
+            var sum = 0
+            while(n<=100){
+                sum+=n
+                n++
+            }
+            document.write(sum)
+            
+        </script>
+        <hr>
+        求一个数字的阶乘
+        <script>
+            var i =5
+            document.write(i+"的阶乘是")
+            var chen = 1
+            while(i>=1){
+                chen *=i
+                i--
+            }
+            document.write(chen)
+        </script>
+    </fieldset>
+
+
+    <fieldset>
+        <legend>do..while循环语句</legend>
+
+        <script>
+            var n = 0
+            do{
+
+                n++
+            }while(n<=10)
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend> for循环结构</legend>
+        <script>
+            var sum1=0
+            for(let i = 0;i<=100;i++){
+                sum1+=i
+            }
+            document.write(sum1+"是一百以内的数字的和")
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>求质数</legend>
+        求n以内的质数
+        <script>
+            var n = 20
+            var isZhishu = true
+            function panduanzhishu(n){
+            isZhishu = true
+            for(let i = 2;i < n;i++ ){
+                if(n%i==0){
+                    return false
+                }
+                else
+                    continue
+            }
+            return isZhishu
+        }
+            document.write(n+"以内的质数有以下几个")
+            for(let i=1;i<=n;i++){
+                if(panduanzhishu(i)){
+                    document.write("<br>"+i+"是质数")
+                }
+                else
+                    continue
+                    // document.write("<br>"+i+"不是质数")
+            }
+        </script>
+    </fieldset>
+
+    <fieldset>
+        <legend>99乘法表</legend>
+        <script>
+            for(let m = 1;m <= 9;m++){
+                for(let n = 1;n<=m;n++){
+                    document.write("<div class ='gezi'>"+m+"×"+n+"="+(m*n)+"</div>")
+                }
+                document.write("<br>")
+            }
+        </script>
+    </fieldset>
+</body>
+</html>
